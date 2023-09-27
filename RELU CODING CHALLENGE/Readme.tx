@@ -1,0 +1,13 @@
+
+# Amazon Product Data Scraper
+
+This Python script is designed to scrape product data from Amazon based on a list of ASIN (Amazon Standard Identification Number) and country codes provided in a CSV file. It uses Selenium for web automation. The scraped data is saved both in a CSV file and a JSON file for further analysis or usage.
+
+Steps how I approch this script:
+
+1. First create function which create csv file with unique name whenever it call. So this is use in our main function when I run script the new csv file created with new name.
+2. Then I create csv file to store asin and country code to use them in our script.
+3. Then I use open function to read csv file line by line and get asin and country code.
+4. Then I loop over it and using selenium webdriver I will go to particular link.
+5. Then I find out Product name , price , image url , details using Xpath, class name, id etc.
+6. Then I store it to in a list and this list store into csv file and convert it into json.
